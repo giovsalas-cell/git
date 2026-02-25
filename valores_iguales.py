@@ -1,14 +1,9 @@
 
-
 def verificar_valores_iguales(array):
-        contador=0
-        arreglo_2=array
-        for a in range (0,len(arreglo_2)):
-                for b in range(0,len(array)):
-                        print(arreglo_2[b])
-                        
-                        
-                                
+    for i in range(len(array)):
+        for j in range(i + 1, len(array)): # Empezamos desde i+1 para no comparar lo mismo
+            if array[i] == array[j]:
+                print(f"Encontrado un duplicado: {array[i]}")
         
    
 
